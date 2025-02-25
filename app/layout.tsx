@@ -1,14 +1,10 @@
-import "./globals.css";
+import { AuthProvider } from "@/context/AuthContext";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt">
       <body>
-        <div className="antialiased">{children}</div>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
