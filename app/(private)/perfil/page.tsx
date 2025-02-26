@@ -21,9 +21,9 @@ export default function PerfilPage() {
     <div className="p-6">
       <h1 className="text-2xl font-bold">Perfil</h1>
       {user.role === "medico" ? (
-        <p>Bem vindo, Médico Teste</p>
+        <p>Bem vindo, Médico Exemplo</p>
       ) : (
-        <p>Bem vindo, Paciente Teste</p>
+        <p>Bem vindo, Paciente Exemplo</p>
       )}
 
       {user.role === "medico" ? (

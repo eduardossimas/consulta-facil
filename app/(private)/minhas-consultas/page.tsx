@@ -47,7 +47,7 @@ export default function Page() {
                 <h1 className="text-2xl font-bold">Minhas Consultas</h1>
                 <p className="text-gray-600">Aqui você pode visualizar todas as suas consultas agendadas. O status de "Pendente" requer que o médico aceite a consulta.</p>
                 <Button onClick={() => window.location.href = '/marcar-consulta'} className="mt-4 w-min">Marcar Nova Consulta</Button>
-                <ConsultList consultations={consults} includeStatus={["Agendado", "Pendente"]} patients={[]} />
+                <ConsultList consultations={consults} includeStatus={["Agendado", "Pendente", "Cancelada"]} patients={[]} />
             </div>
         </div>
     );

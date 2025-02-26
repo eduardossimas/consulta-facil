@@ -4,6 +4,7 @@ const statusColors: { [key: string]: string } = {
     Agendado: 'bg-green-500',
     Pendente: 'bg-yellow-500',
     Finalizada: 'bg-gray-500',
+    Cancelada: 'bg-red-500',
 };
 
 export default function StatusIndicator({ status }: { status: string }) {
